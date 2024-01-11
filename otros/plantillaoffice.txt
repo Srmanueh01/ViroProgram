@@ -1,0 +1,11 @@
+INSERT INTO officealumnos (noffice, correo, contrasena, curso) VALUES
+('', 'aserrador@virolai.com', 'Sog08442', 'Profes-PETIT'),
+('', 'cboixader@virolai.com', 'Vaw89284', 'Profes-PETIT'),
+('', 'clopezdelamadrid@virolai.com', 'Kax19561', 'Profes-PETIT'),
+('', 'crismorales@virolai.com', 'Put78962', 'Profes-PETIT'),
+('', 'eburjachs@virolai.com', 'Naj63442', 'Profes-PETIT'),
+('', 'mamigo@virolai.com', 'Doq94039', 'Profes-PETIT'),
+('', 'rboo@virolai.com', 'Fap72140', 'Profes-PETIT'),
+('', 'scasale@virolai.com', 'Coy46980', 'Profes-PETIT'),
+('', 'mcgamero@virolai.com', 'Lob19878', 'Profes-PETIT'),
+('', 'rpoza@virolai.com', 'Nop14315', 'Profes-PETIT');

@@ -1,0 +1,22 @@
+/* table-styles.css */
+
+/* Estilos para la tabla */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para la cabecera de la tabla */
+th {
+    background-color: #c6d400; /* Cambia este color según tus preferencias */
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    
+}
+

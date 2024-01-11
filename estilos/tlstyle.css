@@ -1,0 +1,36 @@
+/* table-styles.css */
+
+/* Estilos para la tabla */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para la cabecera de la tabla */
+th {
+    background-color: #c6d400; /* Cambia este color según tus preferencias */
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    
+}
+
+.disponible-row {
+    background-color: #92D050; /* Puedes ajustar el color según tus preferencias */
+}
+.prestado-row {
+    background-color: #ffff99; /* Puedes ajustar el color según tus preferencias */
+}
+.fuera-de-servicio-row {
+    background-color: #ffaaaa; /* Puedes ajustar el color según tus preferencias */
+}
+.apalan-row {
+    background-color: #ffcc66; /* Puedes ajustar el color según tus preferencias */
+}
+
+

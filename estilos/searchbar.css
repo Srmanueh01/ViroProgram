@@ -1,0 +1,86 @@
+#search {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    width: 30%;
+    height: 25px;
+    text-align: center;
+    transition: border-color 0.3s, margin 0.3s;
+    outline: none;
+    margin-right: 10px;
+}
+
+#search::placeholder {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    transition: color 0.3s;
+}
+
+#search:focus::placeholder {
+    color: transparent;
+}
+
+#search:focus {
+    border-color: #66afe9;
+    margin-right: 5px;
+}
+
+/* Estilo para el combobox */
+#curso {
+    width: 10%;
+    margin-right: 15px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#curso:hover,
+#curso:focus {
+    border-color: #66afe9;
+    background-color: #f5f5f5;
+}
+
+#nueva-cuenta {
+    display: none;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 350px;
+    height: 300px;
+    border-radius: 5%;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+#nueva-cuenta input {
+    margin-bottom: 10px;
+}
+#mostrarFormulario{
+    position: absolute;
+    top: 157px;
+    left: 45%;
+    width: 10%;
+    height: 32px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+#mostrarFormulario:hover,
+#mostrarFormulario:focus {
+    border-color: #66afe9;
+    background-color: #f5f5f5;
+}
