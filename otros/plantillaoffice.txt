@@ -885,13 +885,7 @@ INSERT INTO officealumnos (noffice, correo, contrasena, curso) VALUES
 ('','ialcaina@virolai.com','Zur14999','PROFES-CEUTA');
 ('','ibeltran@virolai.com','Pad08094','PROFES-CEUTA');
 ('','jespinosa@virolai.com','Baj32032','PROFES-CEUTA');
-('','','',''),
-('','','',''),
-('','','',''),
-('','','',''),
-('','','',''),
-('','','',''),
-('','','','');
+
 
 
 
