@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/viroapp/estilos/tloffice.css">
     <link rel="stylesheet" href="/viroapp/estilos/searchbar.css">
     <link rel="stylesheet" href="/viroapp/estilos/addcuenta.css">
+    <link rel="stylesheet" href="/viroapp/estilos/btnscroll.css">
 
     <title>Dep. Informática</title>
 </head>
@@ -40,19 +41,29 @@
                 <option value="PRIM">Primaria</option>
                 <option value="ESO">ESO</option>
                 <option value="BATX">Bachillerato</option>
+                <option value="PROFES-CEUTA">Profes Ceuta</option>
+                <option value="PRIM-ERE">Primaria ERE</option>
+                <option value="PROFES-ERE">Profes ERE</option>
+                <option value="NETBOOKS-ERE">Netbooks ERE</option>
+                <option value="PROFES-GRIMM">Profes GRIMM</option>
+                <option value="PROFES-AUXILIARS">Profes Auxiliares</option>
+                <option value="PROFES-SUBSTITUS">Profes Sustitutos</option>
+                <option value="NETBOOKS-CEUTA">Netbooks Ceuta</option>
+                <option value="ALTRES">Otros</option>
+                <option value="PSICOLOGIA-CEUTA">Psicologia Ceuta</option>
             </select>
         </form>
         <button id="mostrarFormulario">Añadir nueva cuenta</button>
         <div id="nueva-cuenta">
         </div>
-
-
         <div id="search-results">
             <?php include 'C:\xampp\htdocs\viroapp\conexiones\conectoffice.php'; ?>
         </div>
-
+        <button id="btn-scroll-top" onclick="scrollToTop()">Ir Arriba</button>
     </div>
+    
 
+    <script src="/viroapp/scripts/btnscroll.js"></script>
     <script src="/viroapp/scripts/menu.js"></script>
     <script src="/viroapp/scripts/office.js"></script>
     <script src="/viroapp/scripts/addcuenta.js"></script>
