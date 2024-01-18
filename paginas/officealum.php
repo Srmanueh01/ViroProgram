@@ -57,11 +57,8 @@
                 <option value="PETIT-PAS">PETIT Pas</option>
             </select>
         </form>
-        <button id="mostrarFormulario">Añadir nueva cuenta</button>
-        <div id="nueva-cuenta">
-        </div>
         <div id="search-results">
-            <?php include 'C:\xampp\htdocs\viroapp\conexiones\conectoffice.php'; ?>
+        <?php include 'C:\xampp\htdocs\viroapp\conexiones\conectoffice.php'; ?>
         </div>
         <button id="btn-scroll-top" onclick="scrollToTop()">Ir Arriba</button>
     </div>
