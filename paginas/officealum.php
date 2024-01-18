@@ -51,6 +51,10 @@
                 <option value="NETBOOKS-CEUTA">Netbooks Ceuta</option>
                 <option value="ALTRES">Otros</option>
                 <option value="PSICOLOGIA-CEUTA">Psicologia Ceuta</option>
+                <option value="CEUTA-PAS">CEUTA Pas</option>
+                <option value="ERE-PAS">ERE Pas</option>
+                <option value="GRIMM-PAS">GRIMM Pas</option>
+                <option value="PETIT-PAS">PETIT Pas</option>
             </select>
         </form>
         <button id="mostrarFormulario">Añadir nueva cuenta</button>

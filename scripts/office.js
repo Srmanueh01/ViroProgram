@@ -5,14 +5,14 @@ $(document).ready(function () {
         if (data.length > 0) {
             // Crear la tabla
             var table = '<table border="1">';
-            table += '<tr><th>ID</th><th>Correo</th><th>Contraseña</th><th>Curso</th></tr>';
+            table += '<tr><th>Correo</th><th>Contraseña</th><th>Curso</th></tr>'; //<th>ID</th>
 
             // Iterar sobre los resultados y agregar filas a la tabla
             for (var i = 0; i < data.length; i++) {
                 var row = data[i];
 
                 table += '<tr>';
-                table += '<td>' + row['noffice'] + '</td>'; // Asegúrate de que coincida con el nombre de tu columna en la base de datos
+                //table += '<td>' + row['noffice'] + '</td>'; // Asegúrate de que coincida con el nombre de tu columna en la base de datos
                 table += '<td>' + row['correo'] + '</td>';
                 table += '<td>' + row['contrasena'] + '</td>';
                 table += '<td>' + row['curso'] + '</td>';

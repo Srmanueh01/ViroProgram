@@ -16,15 +16,15 @@ if (!$conn) {
 if (isset($_POST['search'])) {
     $search_term = mysqli_real_escape_string($conn, $_POST['search']);
     // Consulta SQL con filtro por número de serie
-    $sql = "SELECT noffice, correo, contrasena, curso FROM officealumnos WHERE correo LIKE '%$search_term%'";
+    $sql = "SELECT correo, contrasena, curso FROM officealumnos WHERE correo LIKE '%$search_term%'";
 } else {
     // Consulta SQL con filtro por curso si se proporciona un valor en el ComboBox
     if (isset($_POST['curso']) && !empty($_POST['curso'])) {
         $curso = mysqli_real_escape_string($conn, $_POST['curso']);
-        $sql = "SELECT noffice, correo, contrasena, curso FROM officealumnos WHERE curso LIKE '%$curso%'";
+        $sql = "SELECT  correo, contrasena, curso FROM officealumnos WHERE curso LIKE '%$curso%'";
     } else {
         // Consulta SQL sin filtro
-        $sql = "SELECT noffice, correo, contrasena, curso FROM officealumnos";
+        $sql = "SELECT  correo, contrasena, curso FROM officealumnos";
     }
 }
 
@@ -48,10 +48,11 @@ if (isset($_POST['search'])) {
     echo json_encode($results);
 } else {
     // Si no hay término de búsqueda, devolver la tabla HTML directamente
-    echo '<table border="1"><tr><th>ID</th><th>Correo</th><th>Contraseña</th><th>Curso</th></tr>';
+    echo '<table border="1"><tr><th>Correo</th><th>Contraseña</th><th>Curso</th></tr>';//<th>ID</th>
     foreach ($results as $row) {
-        echo '<tr><td>' . $row['noffice'] . '</td><td>' . $row['correo'] . '</td><td>' . $row['contrasena'] . '</td><td>' . $row['curso'] . '</td></tr>';
+        echo '<tr><td>' . $row['correo'] . '</td><td>' . $row['contrasena'] . '</td><td>' . $row['curso'] . '</td></tr>';
     }
+    //<td>' . $row['noffice'] . '</td>
     echo '</table>';
 }
 ?>
