@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 80px;
+    transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-container.menu-open {
+    left: 0;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item:hover a {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    padding: 40px 20px 20px 60px;
+}
+
+.main-content.content-shifted {
+    margin-left: 250px;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    color: #000;
+    /* Cambiado a negro en el estado predeterminado */
+    transition: color 0.3s ease;
+}
+
+/* Cambiar el color de fondo del menú cuando está abierto */
+.menu-container.menu-open .open-btn {
+    color: #fff;
+    /* Cambiado a blanco cuando el menú está abierto */
+}
