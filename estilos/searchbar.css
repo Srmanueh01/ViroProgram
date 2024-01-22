@@ -47,27 +47,8 @@
     background-color: #f5f5f5;
 }
 
-#nueva-cuenta {
-    display: none;
-    position: absolute;
-    left: 55%;
-    top: 30%;
-    width: 350px;
-    height: 300px;
-    border-radius: 5%;
-    background-color: aquamarine;
-    padding: 20px;
-}
-
-#nueva-cuenta input {
-    margin-bottom: 10px;
-}
-#mostrarFormulario{
-    position: absolute;
-    top: 157px;
-    left: 45%;
+#btn-add{
     width: 10%;
-    height: 32px;
     margin-right: 15px;
     text-align: center;
     padding: 6px;
@@ -79,8 +60,27 @@
     outline: none;
     transition: border-color 0.3s, background-color 0.3s;
 }
-#mostrarFormulario:hover,
-#mostrarFormulario:focus {
+
+#btn-add:hover,
+#btn-add:focus {
     border-color: #66afe9;
     background-color: #f5f5f5;
 }
+
+#addcuenta {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #66afe9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+
