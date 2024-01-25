@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/viroapp/estilos/style.css">
     <link rel="stylesheet" href="/viroapp/estilos/tloffice.css">
     <link rel="stylesheet" href="/viroapp/estilos/searchbar.css">
-    <link rel="stylesheet" href="/viroapp/estilos/addcuenta.css">
     <link rel="stylesheet" href="/viroapp/estilos/btnscroll.css">
 
     <title>Dep. Informática</title>
@@ -56,6 +55,37 @@
                 <option value="GRIMM-PAS">GRIMM Pas</option>
                 <option value="PETIT-PAS">PETIT Pas</option>
             </select>
+
+            <button id = "btn-add" type="button" onclick="toggleAddCuenta()">Añadir Cuenta</button>
+            <form id="addCuentaForm" action="/viroapp/conexiones/ingresaroffice.php" method="post">
+                <div id="addcuenta">
+                    <p>Correo</p>
+                    <input type="text" id="correo" name="correo" required placeholder="Ingresa el Correo">
+                    <p>Contraseña</p>
+                    <input type="text" id="contra" name="contra" required placeholder="Ingresa la Contraseña">
+                    <p>Curso</p>
+                    <select id="cursonew" name="cursonew">
+                        <option value="PRIM">Primaria</option>
+                        <option value="ESO">ESO</option>
+                        <option value="BATX">Bachillerato</option>
+                        <option value="PROFES-CEUTA">Profes Ceuta</option>
+                        <option value="PRIM-ERE">Primaria ERE</option>
+                        <option value="PROFES-ERE">Profes ERE</option>
+                        <option value="NETBOOKS-ERE">Netbooks ERE</option>
+                        <option value="PROFES-GRIMM">Profes GRIMM</option>
+                        <option value="PROFES-AUXILIARS">Profes Auxiliares</option>
+                        <option value="PROFES-SUBSTITUS">Profes Sustitutos</option>
+                        <option value="NETBOOKS-CEUTA">Netbooks Ceuta</option>
+                        <option value="ALTRES">Otros</option>
+                        <option value="PSICOLOGIA-CEUTA">Psicologia Ceuta</option>
+                        <option value="CEUTA-PAS">CEUTA Pas</option>
+                        <option value="ERE-PAS">ERE Pas</option>
+                        <option value="GRIMM-PAS">GRIMM Pas</option>
+                        <option value="PETIT-PAS">PETIT Pas</option>
+                    </select>
+                    <button type="button" onclick="enviarFormulario()">Enviar</button>
+                </div>
+            </form>
         </form>
         <div id="search-results">
         <?php include 'C:\xampp\htdocs\viroapp\conexiones\conectoffice.php'; ?>
@@ -63,11 +93,10 @@
         <button id="btn-scroll-top" onclick="scrollToTop()">Ir Arriba</button>
     </div>
     
-
+    <script src="/viroapp/scripts/addcuenta.js">
     <script src="/viroapp/scripts/btnscroll.js"></script>
     <script src="/viroapp/scripts/menu.js"></script>
     <script src="/viroapp/scripts/office.js"></script>
-    <script src="/viroapp/scripts/addcuenta.js"></script>
 </body>
 
 </html>

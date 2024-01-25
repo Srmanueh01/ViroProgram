@@ -76,3 +76,14 @@ $(document).ready(function () {
     // Inicializar la búsqueda sin término al cargar la página
     performSearch('');
 });
+
+// Definir la función toggleAddCuenta en el ámbito global
+function toggleAddCuenta() {
+    $("#addcuenta").toggle();
+}
+
+// Esperar a que el documento esté listo antes de ejecutar el código
+$(document).ready(function () {
+    // Puedes dejar tu código aquí si es necesario
+});
+
