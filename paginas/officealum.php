@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/viroapp/icon/viroicon.png">
+    <link rel="icon" type="image/png" href="/viroapp/icon/virologo.png">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="/viroapp/estilos/style.css">
     <link rel="stylesheet" href="/viroapp/estilos/tloffice.css">
@@ -22,6 +22,7 @@
             <li class="menu-item"><a href="/viroapp/paginas/addpc.php">Añadir PC</a></li>
             <li class="menu-item"><a href="/viroapp/paginas/actdatos.html">Actualizar Datos</a></li>
             <li class="menu-item"><a href="/viroapp/paginas/officealum.php">Office</a></li>
+            <li class="menu-item"><a href="/viroapp/paginas/infovirolai.html">Otros...</a></li>
         </ul>
     </div>
 
