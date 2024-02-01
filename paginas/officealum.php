@@ -56,7 +56,7 @@
                 <option value="GRIMM-PAS">GRIMM Pas</option>
                 <option value="PETIT-PAS">PETIT Pas</option>
             </select>
-
+            <button id="btn-eliminar" onclick="abrirVentana()">Eliminar usuario</button>
             <button id = "btn-add" type="button" onclick="toggleAddCuenta()">Añadir Cuenta</button>
             <form id="addCuentaForm" action="/viroapp/conexiones/ingresaroffice.php" method="post">
                 <div id="addcuenta">
@@ -87,13 +87,15 @@
                     <button type="button" onclick="enviarFormulario()">Enviar</button>
                 </div>
             </form>
+            
         </form>
         <div id="search-results">
         <?php include 'C:\xampp\htdocs\viroapp\conexiones\conectoffice.php'; ?>
         </div>
         <button id="btn-scroll-top" onclick="scrollToTop()">Ir Arriba</button>
     </div>
-    
+
+    <script src="/viroapp/scripts/eliminar_registro.js"></script>
     <script src="/viroapp/scripts/addcuenta.js">
     <script src="/viroapp/scripts/btnscroll.js"></script>
     <script src="/viroapp/scripts/menu.js"></script>
